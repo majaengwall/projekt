@@ -1,25 +1,35 @@
 body {
-    background-image: url("img/album1.jpg");
-    background-repeat: no-repeat;
+    background-image: url("img/veronica-desktop.jpg");
+    background-attachment: fixed;
     background-size: cover;
-
     margin: 0px;
+    font-family: 'Barlow Condensed';
 }
 
 body>div {
     margin: 50px;
     margin-top: 120px;
-    background-color: rgba(82, 82, 82, 0.6);
-    border: 2px solid white;
+    background-color: rgba(143, 142, 142, 0.4);
     border-radius: 20px;
 }
+
+
 
 #satan_i_gatan {
     margin: 20px;
     padding: 10px;
+    background-color: rgba(75, 75, 75, 0.6);
     border: 2px solid white;
     border-radius: 20px;
 
+}
+
+#handen_i_fickan {
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(75, 75, 75, 0.6);
+    border: 2px solid white;
+    border-radius: 20px; 
 }
 
 
@@ -28,6 +38,54 @@ nav>div {
     margin: 20px;
     padding: 5px;
     border: 2px solid white;
-    border-radius: 20px;
+    border-radius: 10px;
 
+}
+
+@font-face {
+    font-family: 'Bungee Outline';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(BungeeOutline-Regular.ttf) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(Barlow Condensed-Regular.ttf) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+header>h1 {
+    font-family: 'Bungee Outline';
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+    background-image: url("img/album2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+}
+
+#satan_i_gatan>div:nth-child(3)>div {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px; 
+    background-color: rgb(251, 249, 236);
+    color: rgb(153, 173, 147);
+}   
+
+
+#handen_i_fickan>div:nth-child(3)>div {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px; 
+    background-color: rgb(238, 219, 228);
+    color: rgb(72, 81, 146);
 }
