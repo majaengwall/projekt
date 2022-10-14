@@ -6,13 +6,50 @@ body {
     font-family: 'Barlow Condensed';
 }
 
+@media only screen and (max-width: 799px) {
+    body {
+    background-image: url("img/veronica-tablet.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 600px)  {     
+    body {
+        background-image: url("img/veronica-phone.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+
+    }
+
+@font-face {
+    font-family: 'Bungee Outline';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(BungeeOutline-Regular.ttf) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(Barlow Condensed-Regular.ttf) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
 body>div {
     margin: 50px;
     margin-top: 120px;
     background-color: rgba(143, 142, 142, 0.4);
     border-radius: 20px;
 }
-
 
 
 #satan_i_gatan {
@@ -42,36 +79,10 @@ nav>div {
 
 }
 
-@font-face {
-    font-family: 'Bungee Outline';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(BungeeOutline-Regular.ttf) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-    font-family: 'Barlow Condensed';
-    font-style: normal;
-    font-weight: 300;
-    font-display: swap;
-    src: url(Barlow Condensed-Regular.ttf) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
 header>h1 {
     font-family: 'Bungee Outline';
 }
 
-@media only screen and (max-width: 900px) {
-    body {
-    background-image: url("img/album2.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    }
-}
 
 #satan_i_gatan>div:nth-child(3)>div {
     margin: 20px;
@@ -88,4 +99,32 @@ header>h1 {
     border-radius: 20px; 
     background-color: rgb(238, 219, 228);
     color: rgb(72, 81, 146);
+}
+
+.cover {
+    position: relative;
+    width: 10%;
+    top: -250px;
+    right: -700px;
+}
+
+.show_hover {
+    width: 100%;
+    display: block;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+
+.show_not_hover {
+
+    height: auto;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.show_not_hover:hover {
+    opacity: 1;
 }
