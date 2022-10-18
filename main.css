@@ -1,29 +1,45 @@
-body {
+@media only screen and (min-width: 800px) {
+    body {
     background-image: url("img/veronica-desktop.jpg");
     background-attachment: fixed;
     background-size: cover;
     margin: 0px;
     font-family: 'Barlow Condensed';
+    color: white;
+    }
+
 }
 
 @media only screen and (max-width: 799px) {
     body {
     background-image: url("img/veronica-tablet.jpg");
     background-attachment: fixed;
-    background-repeat: no-repeat;
     background-size: cover;
+    margin: 0px;
+    font-family: 'Barlow Condensed';
+    color: white;
     }
+
 }
 
 @media only screen and (max-width: 600px)  {     
     body {
         background-image: url("img/veronica-phone.jpg");
         background-attachment: fixed;
-        background-repeat: no-repeat;
         background-size: cover;
+        margin: 0px;
+        font-family: 'Barlow Condensed';
+        color: white;
+        margin: -50px;
+        margin-top: -120px;
         }
 
+        body>div {
+            border-radius: -20px;
+
+        }
     }
+
 
 @font-face {
     font-family: 'Bungee Outline';
@@ -43,10 +59,56 @@ body {
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+nav {
+    display: flex;
+    width: 90px;
+    margin: 2vw;
+    gap: 2px;
+    width: 87vw;
+    align-content: center;
+} 
+
+
+nav>div {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    margin: 2px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid white;
+    border-radius: 6px;
+
+}
+
+nav>div:nth-child(1):hover {
+    background-color: rgba(75, 75, 75, 0.6);
+    color: white;
+}
+
+nav>div:nth-child(3):hover {
+    background-color: rgba(75, 75, 75, 0.6);
+    color: white;
+}
+
+nav>div:nth-child(4):hover {
+    background-color: rgba(75, 75, 75, 0.6);
+    color: white;
+}
+
+.marked {
+    font-weight: bolder;
+    box-shadow: 1px 1px 5px 5px white;
+}
+
 
 body>div {
     margin: 50px;
-    margin-top: 120px;
+    margin-top: 100px;
     background-color: rgba(143, 142, 142, 0.4);
     border-radius: 20px;
 }
@@ -69,18 +131,93 @@ body>div {
     border-radius: 20px; 
 }
 
+.anecdotes {
+    grid-column: 1/span 3;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    height: 200px;
+}
 
-nav>div {
-    background-color: rgba(245, 245, 245, 0.4);
-    margin: 20px;
-    padding: 5px;
-    border: 2px solid white;
-    border-radius: 10px;
+.top_right_90 {
+    background-color: rgb(153, 173, 147);
+    color: rgb(251, 249, 236);
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
 
+.two_wide {
+    background-color: rgb(153, 173, 147);
+    color: rgb(251, 249, 236);
+    grid-column: 3/span 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+.bottom_right_90{
+    background-color: rgb(153, 173, 147);
+    color: rgb(251, 249, 236);
+    grid-column: 6;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.image_1 {
+    background-image: url(img/walz.jpg);
+    height: 100%;
+    width: 100px;
+    grid-column: 5;
+    grid-row: 1;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 20px;
+}
+
+
+h1 {
+    font-family: 'Bungee Outline';
 }
 
 header>h1 {
-    font-family: 'Bungee Outline';
+    margin-left: 15px;
+    font-family: 'Bungee shade';
+    font-size: 4vw;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+
+.album_data>div>h1 {
+    margin-bottom: -35px;
+    margin-top: -15px;
+}
+
+.album_data>div>p {
+    margin-top: 40px;
+    margin-bottom: -15px;
+}
+
+.album_data>div>ul {
+    list-style-type: none;
+}
+
+.song_list>div>ul {
+    list-style-type: value;
+
+}
+
+.song_list>div>h2 {
+    margin-bottom: -15px;
 }
 
 
@@ -93,38 +230,11 @@ header>h1 {
 }   
 
 
+
 #handen_i_fickan>div:nth-child(3)>div {
     margin: 20px;
     padding: 10px;
     border-radius: 20px; 
     background-color: rgb(238, 219, 228);
     color: rgb(72, 81, 146);
-}
-
-.cover {
-    position: relative;
-    width: 10%;
-    top: -250px;
-    right: -700px;
-}
-
-.show_hover {
-    width: 100%;
-    display: block;
-    height: auto;
-    position: relative;
-    z-index: 1;
-}
-
-
-.show_not_hover {
-
-    height: auto;
-    width: 100%;
-    top: 0;
-    left: 0;
-}
-
-.show_not_hover:hover {
-    opacity: 1;
 }
