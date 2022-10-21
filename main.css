@@ -1,4 +1,5 @@
-@media only screen and (min-width: 800px) {
+/*desktop*/
+@media (min-width: 800px) {
     body {
     background-image: url("img/veronica-desktop.jpg");
     background-attachment: fixed;
@@ -23,19 +24,162 @@
         color: white;
     }
 
-    header>h1 {
-        margin-left: 15px;
-        font-family: 'Bungee shade';
+    header {
+        font-family: "Bungee_Shade";
         font-size: 4vw;
-        color: rgba(255, 255, 255, 0.8);
-        padding: 20px;
-        margin-bottom: -50px;
+        color: rgba(255, 255, 255, 0.809);
+        padding: 2vw 2vw 0 2vw;
     
     }
+    
+    header>h1 {
+        margin-top: 0;
+    }
+
+    .album_data {
+        padding-left: 20px;
+    }
+    
+    .album_data>div>h1 {
+        font-family: "Bungee_Outline";
+        font-size: 6vh;
+        margin-bottom: 0;
+    }
+    
+    .album_data>div>h2 {
+        font-size: 4vh;
+        margin-top: 0;
+        color: white;
+    }
+    
+    .album_data>div:nth-child(2) ul {
+        /*Kommer ej åt listan!*/
+        list-style: none;
+    }
+    
+    .album_description {
+        font-size: 1vw;
+        padding-top: 10px;
+        max-width: 90%;
+    }
+    
+    .cover {
+        position: relative;
+        margin: 10px;
+        grid-column: 2;
+    }
+    
+    .show_hover {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        border-radius: 20px 20px 0 0;
+    }
+    
+    .show_not_hover {
+        height: 100%;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    
+    .show_hover:hover {
+        opacity: 0;
+    }
+    
+    .song_list ul {
+        list-style: decimal;
+        padding-left: 3vw;
+    }
+    .song_list ul {
+        list-style: decimal;
+        padding-left: 3vw;
+    }
+    
+    .song_list {
+        gap: 5px;
+        grid-column: 2/span 3;
+        height: 100%;
+        font-size: 1vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+        display: inline-grid;
+    
+    }
+    
+    .song_list>div {
+        background-color: black;
+        border-radius: 0 0 0 20px;
+        padding-bottom: 20px;
+    }
+    
+    .song_list>div:nth-child(1) {
+        margin-left: 1vw;
+    }
+    
+    .song_list>div:nth-child(2) {
+        background-color: black;
+        margin-right: 10px;
+        border-radius: 0 0 20px 0;
+    }
+    
+    .song_list>div>h2 {
+        padding-left: 2vw;
+    }
+    
+    
+    .anecdotes {
+        grid-column: 1/span 3;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        height: 30vh;
+        gap: 20px;
+        padding: 20px;
+        color: white;
+        font-size: 1vw;
+    }
+    
+    .top_right_90,
+    .two_wide,
+    .image_1,
+    .bottom_right_90,
+    .top_left_90 {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2vw;
+    }
+    
+    .top_right_90 {
+        background-image: url(img/walz.jpg);
+        grid-column: 1;
+        grid-row: 1;
+        border-radius: 20px 0 20px 20px;
+    
+    }
+    
+    .two_wide {
+        background-color: black;
+        grid-column: 3/span 2;
+        grid-row: 1;
+        border-radius: 20px 20px 20px 0;
+    }
+    
+    .empty {
+        display: none;
+    }
+
+
+
+
 
 }
 
-@media only screen and (max-width: 799px) {
+
+/*tablet*/
+@media (max-width: 799px) {
     body {
     background-image: url("img/veronica-tablet.jpg");
     background-attachment: fixed;
@@ -45,17 +189,158 @@
     color: white;
     }
 
-    header>h1 {
-        margin-left: 15px;
-        font-family: 'Bungee shade';
+    header {
+        font-family: "Bungee_Shade";
         font-size: 4vw;
-        color: rgba(255, 255, 255, 0.8);
+        color: rgba(255, 255, 255, 0.809);
+        padding: 2vw 2vw 0 2vw;
+    
+    }
+    
+    header>h1 {
+        margin-top: 0;
+    }
+
+    .album_data {
+        padding-left: 20px;
+    }
+    
+    .album_data>div>h1 {
+        font-family: "Bungee_Outline";
+        font-size: 6vh;
+        margin-bottom: 0;
+    }
+    
+    .album_data>div>h2 {
+        font-size: 4vh;
+        margin-top: 0;
+        color: white;
+    }
+    
+    .album_data>div:nth-child(2) ul {
+        /Kommer ej åt listan!/
+        list-style: none;
+    }
+    
+    .album_description {
+        font-size: 1vw;
+        padding-top: 10px;
+        max-width: 90%;
+    }
+    
+    .cover {
+        position: relative;
+        margin: 10px;
+        grid-column: 2;
+    }
+    
+    .show_hover {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        border-radius: 20px 20px 0 0;
+    }
+    
+    .show_not_hover {
+        height: 100%;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    
+    .show_hover:hover {
+        opacity: 0;
+    }
+    
+    .song_list ul {
+        list-style: decimal;
+        padding-left: 3vw;
+    }
+    .song_list ul {
+        list-style: decimal;
+        padding-left: 3vw;
+    }
+    
+    .song_list {
+        gap: 5px;
+        grid-column: 2/span 3;
+        height: 100%;
+        font-size: 1vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+        display: inline-grid;
+    
+    }
+    
+    .song_list>div {
+        background-color: black;
+        border-radius: 0 0 0 20px;
+        padding-bottom: 20px;
+    }
+    
+    .song_list>div:nth-child(1) {
+        margin-left: 1vw;
+    }
+    
+    .song_list>div:nth-child(2) {
+        background-color: black;
+        margin-right: 10px;
+        border-radius: 0 0 20px 0;
+    }
+    
+    .song_list>div>h2 {
+        padding-left: 2vw;
+    }
+    
+    
+    .anecdotes {
+        grid-column: 1/span 3;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        height: 30vh;
+        gap: 20px;
         padding: 20px;
+        color: white;
+        font-size: 1vw;
+    }
+    
+    .top_right_90,
+    .two_wide,
+    .image_1,
+    .bottom_right_90,
+    .top_left_90 {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2vw;
+    }
+    
+    .top_right_90 {
+        background-image: url(img/walz.jpg);
+        grid-column: 1;
+        grid-row: 1;
+        border-radius: 20px 0 20px 20px;
+    
+    }
+    
+    .two_wide {
+        background-color: black;
+        grid-column: 3/span 2;
+        grid-row: 1;
+        border-radius: 20px 20px 20px 0;
+    }
+    
+    .empty {
+        display: none;
     }
 
 }
 
-@media only screen and (max-width: 600px)  {     
+
+/*phone*/
+@media (max-width: 600px)  {     
     body {
         background-image: url("img/veronica-phone.jpg");
         background-attachment: fixed;
@@ -119,7 +404,6 @@ border-radius: 6px;
     box-shadow: 1px 1px 5px 5px white;
 }
 
-
 body>div {
     margin: 50px;
     margin-top: 100px;
@@ -127,131 +411,15 @@ body>div {
     border-radius: 20px;
 }
 
-h1 {
-    font-family: 'Bungee Outline';
-}
-
-
-#satan_i_gatan {
-    margin: 20px;
+article {
+    background-color: rgba(76, 73, 73, 0.6);
+    margin: 2vw;
     padding: 10px;
-    background-color: rgba(75, 75, 75, 0.6);
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 20px;
-
-}
-
-#handen_i_fickan {
-    margin: 20px;
-    padding: 10px;
-    background-color: rgba(75, 75, 75, 0.6);
-    border: 2px solid white;
-    border-radius: 20px; 
-}
-
-.anecdotes {
-    grid-column: 1/span 3;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr;
-    height: 200px;
-}
-
-.top_right_90 {
-    background-color: rgb(153, 173, 147);
-    color: rgb(251, 249, 236);
-    grid-column: 1;
-    grid-row: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-}
-
-.two_wide {
-    background-color: rgb(153, 173, 147);
-    color: rgb(251, 249, 236);
-    grid-column: 3/span 2;
-    grid-row: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-}
-
-
-.bottom_right_90{
-    background-color: rgb(153, 173, 147);
-    color: rgb(251, 249, 236);
-    grid-column: 6;
-    grid-row: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-}
-
-.image_1 {
-    background-image: url(img/walz.jpg);
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100px;
-    grid-column: 5;
-    grid-row: 1;
-    display: flex;
-    align-items: flex-end;
-    padding: 0 20px;
-}
-
-.album_data>div>h1 {
-    margin-bottom: -35px;
-    margin-top: -15px;
-}
-
-.album_data>div>p {
-    margin-top: 40px;
-    margin-bottom: -15px;
-}
-
-.album_data>div>ul {
-    list-style-type: none;
-}
-
-.song_list>div>ul {
-    list-style-type: value;
-
-}
-
-.song_list>div>h2 {
-    margin-bottom: -15px;
-}
-
-
-#satan_i_gatan>div:nth-child(3)>div {
-    margin: 20px;
-    padding: 10px;
-    background-color: rgb(251, 242, 236);
-    color: rgb(153, 173, 147);
-}   
-
-#satan_i_gatan>div:nth-child(3)>div:nth-child(1) {
-    border-radius: 0px 0px 0px 20px; 
-    width: 15vw;
-}
-
-#satan_i_gatan>div:nth-child(3)>div:nth-child(2) {
-    border-radius: 0px 0px 20px 0px; 
-    width: 15vw;
-}
-
-
-
-#handen_i_fickan>div:nth-child(3)>div {
-    margin: 20px;
-    padding: 10px;
-    border-radius: 20px; 
-    background-color: rgb(238, 219, 228);
-    color: rgb(72, 81, 146);
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: repeat(3, auto);
 }
 
 footer {
