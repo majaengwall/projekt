@@ -1,7 +1,7 @@
 /*desktop*/
 @media (min-width: 800px) {
     body {
-    background-image: url("img/veronica-desktop.jpg");
+    background-image: url("./img/veronica-desktop.jpg");
     background-attachment: fixed;
     background-size: cover;
     margin: 0px;
@@ -35,15 +35,12 @@
     header>h1 {
         margin-top: 0;
     }
-
-    .album_data {
-        padding-left: 20px;
-    }
     
     .album_data>div>h1 {
         font-family: 'Bungee Outline';
-        font-size: 4vh;
+        font-size: 5vh;
         margin-bottom: 0;
+        margin-top: -15px;
     }
     
     .album_data>div>h2 {
@@ -51,15 +48,22 @@
         margin-top: 0;
         color: white;
     }
-    
+
+    .album_data>div>p {
+        font-size: 1,5vw;
+        margin-top: 40px;
+        margin-bottom: -15px;
+
+    }
+
     .album_data>div:nth-child(2) ul {
         /*Kommer ej åt listan!*/
         list-style: none;
     }
     
     .album_description {
-        font-size: 1vw;
-        padding-top: 10px;
+        font-size: 1,5vw;
+        padding-top: 5px;
         max-width: 90%;
     }
     
@@ -145,6 +149,22 @@
         color: white;
         font-size: 1vw;
     }
+
+    #handen_i_fickan>ul>li:nth-child(5) {
+        background-color: black;
+        grid-column: 4/span 2;
+        grid-row: 1;
+        border-radius: 20px 20px 20px 0;
+        
+    }
+    
+    #handen_i_fickan>ul>li:nth-child(1) {
+        background-color: black;
+        grid-column: 1/span 2;
+        grid-row: 1;
+        border-radius: 20px 20px 20px 0;
+        
+    }
     
     .top_right_90,
     .two_wide,
@@ -174,7 +194,7 @@
     }
 
     .image_1 {
-    background-image: url(img/walz.jpg);
+    background-image: url(./img/walz.jpg);
     background-repeat: no-repeat;
     }
 
@@ -192,7 +212,7 @@
 /*tablet*/
 @media (max-width: 799px) {
     body {
-    background-image: url("img/veronica-tablet.jpg");
+    background-image: url("./img/veronica-tablet.jpg");
     background-attachment: fixed;
     background-size: cover;
     margin: 0px;
@@ -354,7 +374,7 @@
 /*phone*/
 @media (max-width: 600px)  {     
     body {
-        background-image: url("img/veronica-phone.jpg");
+        background-image: url("./img/veronica-phone.jpg");
         background-attachment: fixed;
         background-size: cover;
         margin: 0px;
@@ -433,6 +453,25 @@ article {
     grid-template-columns: 3fr 2fr;
     grid-template-rows: repeat(3, auto);
 }
+
+/*ett ikonen*/
+#handen_i_fickan .album_data {
+    position: relative;
+}
+
+#handen_i_fickan .album_data::before {
+content: '';
+background-image: url(./img/number-1-icon.png);
+background-size: 7vh 7vh;
+background-repeat: no-repeat;
+display: inline-block;
+position: absolute;
+top: -25px;
+left: -25px;
+height: 100px;
+width: 100px;
+}
+
 
 footer {
     padding-left: 30px;
