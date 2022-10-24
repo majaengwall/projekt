@@ -57,7 +57,6 @@
     }
 
     .album_data>div:nth-child(2) ul {
-        /*Kommer ej åt listan!*/
         list-style: none;
     }
     
@@ -137,41 +136,98 @@
         padding-left: 2vw;
     }
     
-    
     .anecdotes {
         grid-column: 1/span 3;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: 1fr;
         height: 30vh;
-        gap: 20px;
-        padding: 20px;
-        color: white;
+        gap: 5px;
         font-size: 1vw;
+
+    }
+
+    #satan_i_gatan>ul {
+        padding-left: 0px;
+    }
+
+    #satan_i_gatan>ul>li:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1;
+        border-radius: 20px 0 20px 20px;
+        
+    }
+
+    #satan_i_gatan>ul>li:nth-child(2) {
+        grid-column: 2;
+        grid-row: 1;   
+    }
+
+    #satan_i_gatan>ul>li:nth-child(3) {
+        grid-column: 3/span 2; 
+        grid-row: 1;
+        border-radius: 20px 20px 20px 0;
+    }
+
+    #satan_i_gatan>ul>li:nth-child(6) {
+        background-image: url(./img/walz.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-column: 5;
+        grid-row: 1;
+        border-radius: 0px 20px 20px 20px;
+        align-items: flex-end;
+        padding-bottom: 5px;
+    }
+
+    #satan_i_gatan>ul>li:nth-child(7) {
+        grid-column: 6; 
+        grid-row: 1;
+        border-radius: 20px 20px 0 20px;
+        
+    }
+
+    #handen_i_fickan>ul {
+        padding-left: 0px;
     }
 
     #handen_i_fickan>ul>li:nth-child(5) {
-        background-color: black;
+        background-image: url(./img/hakan.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
         grid-column: 4/span 2;
         grid-row: 1;
-        border-radius: 20px 20px 20px 0;
-        
+        border-radius: 0px 20px 20px 20px;
+        align-items: flex-end;
+        padding-bottom: 5px;
     }
     
     #handen_i_fickan>ul>li:nth-child(1) {
-        background-color: black;
         grid-column: 1/span 2;
         grid-row: 1;
         border-radius: 20px 20px 20px 0;
         
     }
     
+    #handen_i_fickan>ul>li:nth-child(6) {
+        grid-column: 6; 
+        grid-row: 1;
+        border-radius: 20px 20px 0 20px;
+        
+    }
+
+    #handen_i_fickan>ul>li:nth-child(2) {
+        grid-column: 3; 
+        grid-row: 1;
+        border-radius: 0 20px 20px 20px;
+        
+    }
+
     .top_right_90,
     .two_wide,
     .image_1,
     .bottom_right_90,
     .top_left_90 {
-        background-color: black;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -179,7 +235,6 @@
     }
     
     .top_right_90 {
-        background-color: black;
         grid-column: 1;
         grid-row: 1;
         border-radius: 20px 0 20px 20px;
@@ -187,24 +242,22 @@
     }
     
     .two_wide {
-        background-color: black;
         grid-column: 3/span 2;
         grid-row: 1;
         border-radius: 20px 20px 20px 0;
     }
 
-    .image_1 {
-    background-image: url(./img/walz.jpg);
-    background-repeat: no-repeat;
+    #satan_i_gatan>ul>li:nth-child(6) {
+        background-image: url(./img/walz.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: flex-end;
+        padding-bottom: 5px;
     }
 
     .empty {
         display: none;
     }
-
-
-
-
 
 }
 
@@ -249,7 +302,6 @@
     }
     
     .album_data>div:nth-child(2) ul {
-        /Kommer ej åt listan!/
         list-style: none;
     }
     
@@ -303,8 +355,20 @@
     
     }
     
+    #handen_i_fickan>div:nth-child(3)>div {
+        background-color: rgb(227, 210, 208);
+        color: rgb(69, 71, 130);
+        padding-bottom: 20px; 
+    }
+
+
+    #satan_i_gatan>div:nth-child(3)>div {
+        background-color: rgb(238, 233, 216);
+        color: rgb(155, 176, 147);
+        padding-bottom: 20px; 
+    }
+
     .song_list>div {
-        background-color: black;
         border-radius: 0 0 0 20px;
         padding-bottom: 20px;
     }
@@ -315,7 +379,6 @@
     }
     
     .song_list>div:nth-child(2) {
-        background-color: black;
         margin-right: 10px;
         border-radius: 0 0 20px 0;
     }
@@ -324,25 +387,100 @@
         padding-left: 2vw;
     }
     
-    
     .anecdotes {
-        grid-column: 1/span 3;
+        grid-column: 1/span 6;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: 1fr;
         height: 30vh;
         gap: 20px;
         padding: 20px;
-        color: white;
         font-size: 1vw;
     }
     
+    #satan_i_gatan>ul {
+        padding-left: 0px;
+    }
+
+    #satan_i_gatan>ul>li:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1;
+        border-radius: 20px 20px 20px 0;
+        
+    }
+
+    #satan_i_gatan>ul>li:nth-child(2) {
+        grid-column: 2;
+        grid-row: 1;   
+    }
+
+    #satan_i_gatan>ul>li:nth-child(3) {
+        grid-column: 3/span 2; 
+        grid-row: 1;
+        border-radius: 20px 20px 0 20px;
+    }
+
+    #satan_i_gatan>ul>li:nth-child(6) {
+        background-image: url(./img/walz.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-column: 5;
+        grid-row: 1;
+        border-radius: 0px 20px 20px 20px;
+        align-items: flex-end;
+        padding-bottom: 5px;
+    }
+
+    #satan_i_gatan>ul>li:nth-child(7) {
+        grid-column: 6; 
+        grid-row: 1;
+        border-radius: 20px 20px 0 20px;
+        
+    }
+
+
+    #handen_i_fickan>ul {
+        padding-left: 0px;
+    }
+
+    #handen_i_fickan>ul>li:nth-child(1) {
+            grid-column: 1/span 2;
+            grid-row: 1;
+            border-radius: 20px 20px 20px 0;
+            
+        }
+
+    #handen_i_fickan>ul>li:nth-child(2) {
+        grid-column: 3; 
+        grid-row: 1;
+        border-radius: 20px 20px 0 20px;
+    }
+
+    #handen_i_fickan>ul>li:nth-child(5) {
+        background-image: url(./img/hakan.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-column: 2/span 2;
+        grid-row: 2;
+        border-radius: 0px 20px 20px 20px;
+        align-items: flex-end;
+        padding-bottom: 5px;
+    }
+    
+    #handen_i_fickan>ul>li:nth-child(6) {
+        grid-column: 4; 
+        grid-row: 2;
+        border-radius: 20px 20px 0 20px;
+        
+    }
+
+
+
     .top_right_90,
     .two_wide,
     .image_1,
     .bottom_right_90,
     .top_left_90 {
-        background-color: black;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -350,7 +488,6 @@
     }
     
     .top_right_90 {
-        background-color: black;
         grid-column: 1;
         grid-row: 1;
         border-radius: 20px 0 20px 20px;
@@ -358,12 +495,19 @@
     }
     
     .two_wide {
-        background-color: black;
         grid-column: 3/span 2;
         grid-row: 1;
         border-radius: 20px 20px 20px 0;
     }
-    
+
+    #satan_i_gatan>ul>li:nth-child(6) {
+        background-image: url(./img/walz.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: flex-end;
+        padding-bottom: 5px;
+    }
+
     .empty {
         display: none;
     }
@@ -397,7 +541,6 @@
     font-weight: 400;
     font-display: swap;
     src: url(BungeeOutline-Regular.ttf) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -406,7 +549,6 @@
     font-weight: 300;
     font-display: swap;
     src: url(Barlow Condensed-Regular.ttf) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 nav {
@@ -452,6 +594,16 @@ article {
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: repeat(3, auto);
+}
+
+#satan_i_gatan>ul>li {
+    background-color: rgb(155, 176, 147);
+    color: rgb(238, 233, 216);
+}
+
+#handen_i_fickan>ul>li {
+    background-color: rgb(69, 71, 130);
+    color: rgb(227, 210, 208);  
 }
 
 /*ett ikonen*/
