@@ -9,6 +9,13 @@
     color: white;
     }
 
+    body>div {
+        margin: 50px;
+        margin-top: 100px;
+        background-color: rgba(143, 142, 142, 0.4);
+        border-radius: 20px;
+    }
+
     nav>div:nth-child(1):hover {
         background-color: rgba(75, 75, 75, 0.6);
         color: white;
@@ -290,6 +297,13 @@
     color: white;
     }
 
+    body>div {
+        margin: 50px;
+        margin-top: 100px;
+        background-color: rgba(143, 142, 142, 0.4);
+        border-radius: 20px;
+    }
+
     header {
         font-family: 'Bungee Shade';
         font-size: 4vw;
@@ -300,6 +314,8 @@
     
     header>h1 {
         margin-top: 0;
+        text-align: center;
+        line-height: 1.2em
     }
 
     .album_data {
@@ -367,6 +383,11 @@
         opacity: 0;
     }
     
+    .song_list h2 {
+        margin-bottom: -13px;
+        margin-left: -5px;
+    }
+
     .song_list ul {
         list-style: decimal;
         padding-left: 3vw;
@@ -424,6 +445,7 @@
         font-size: 2vw;
         padding-bottom: 0;
         margin-right: -75px;
+
     }
     
     #satan_i_gatan>ul {
@@ -542,7 +564,6 @@
         background-image: url("./img/veronica-phone.jpg");
         background-attachment: fixed;
         background-size: cover;
-        margin: 0px;
         font-family: 'Barlow Condensed';
         color: white;
         margin: -50px;
@@ -550,9 +571,272 @@
         }
 
         body>div {
-            border-radius: -20px;
-
+            border-radius: 0;
         }
+
+
+        header {
+            font-family: 'Bungee Shade';
+            font-size: 4vw;
+            color: solid white;
+            padding: 2vw 2vw 0 2vw;
+        
+        }
+        
+        header>h1 {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 10vw;
+            line-height: 1.2em
+        }
+    
+        .album_data {
+            grid-column: 1 / span 10;
+            grid-row: 3;
+        }
+        
+        .album_data>div>h1 {
+            font-family: 'Bungee Outline';
+            font-size: 5vw;
+            margin-top: -5px;
+            margin-bottom: -5px;
+            line-height: 1.5em
+        }
+        
+        .album_data>div>h2 {
+            font-size: 4vw;
+            margin-top: 0;
+            color: white;
+        }
+    
+        .album_data>div>p {
+            font-size: 2.5vw;
+            margin-top: 40px;
+            margin-bottom: -15px;
+    
+        }
+        
+        .album_data>div:nth-child(2) ul {
+            list-style: none;
+        }
+        
+        .album_description {
+            font-size: 1vw;
+            padding-top: 10px;
+            max-width: 90%;
+        }
+    
+        .best {
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: 4;
+            padding: 10px;
+        }
+        
+        .cover {
+            position: relative;
+            margin: 10px;
+            grid-column: 1/span 10;
+            grid-row: 1;
+        }
+        
+        .show_hover {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            border-radius: 20px 20px 0 0;
+        }
+        
+        .show_not_hover {
+            height: 100%;
+            width: 100%;
+            border-radius: 20px 20px 0 0;
+        }
+        
+        .show_hover:hover {
+            opacity: 0;
+        }
+        
+        .song_list h2 {
+            margin-bottom: -13px;
+            margin-left: -5px;
+        }
+    
+        .song_list ul {
+            list-style: decimal;
+            padding-left: 3vw;
+        }
+        
+        .song_list {
+            gap: 5px;
+            flex-direction: row;
+            grid-column: 1 / span 10;
+            grid-row: 2;
+            display: grid;
+            grid-template-columns: auto auto;
+            height: 70%;
+            font-size: 3vw;
+            color: white;
+            display: inline-grid;
+            padding-bottom: 10px;
+        
+        }
+
+        
+        #handen_i_fickan>div:nth-child(3)>div {
+            background-color: rgb(227, 210, 208);
+            color: rgb(69, 71, 130);
+            padding-bottom: 20px; 
+        }
+    
+        #satan_i_gatan>div:nth-child(3)>div {
+            background-color: rgb(238, 233, 216);
+            color: rgb(155, 176, 147);
+            padding-bottom: 20px; 
+        }
+    
+        .song_list>div:nth-child(1) {
+            margin-right: 1vw;
+            border-radius: 0 0 20px 20px;
+            margin-top: ;
+            margin-bottom: 1vw;
+            padding-left: 1.5vw;
+        }
+        
+        .song_list>div:nth-child(2) {
+            margin-top: 1.4vw;
+            margin-right: 1vw;
+            border-radius: 0 0 20px 20px;
+            margin-bottom: 1vw;
+            padding-left: 1.5vw;
+        }
+        
+        .song_list>div>h2 {
+            padding-left: 2vw;
+        }
+        
+        .anecdotes {
+            grid-column: 1/span 10;
+            grid-row: 4;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: 1fr 1fr;
+            height: 60vw;
+            gap: 5px;
+            padding: 20px;
+            font-size: 2vw;
+            padding-bottom: 0;
+            margin-right: -75px;
+        }
+        
+        #satan_i_gatan>ul {
+            padding-left: 0px;
+        }
+    
+        #satan_i_gatan>ul>li:nth-child(1) {
+            grid-column: 1/span 3;
+            grid-row: 1;
+            border-radius: 10px 0 10px 10px;
+            
+        }
+    
+        #satan_i_gatan>ul>li:nth-child(3) {
+            grid-column: 4/span 6;
+            grid-row: 1;
+            border-radius: 10px 10px 10px 0;
+        }
+    
+        #satan_i_gatan>ul>li:nth-child(6) {
+            background-image: url(./img/walz.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            grid-column: 4/span 3;
+            grid-row: 2;
+            border-radius: 0px 10px 10px 10px;
+            align-items: flex-end;
+            padding-bottom: 5px;
+        }
+    
+        #satan_i_gatan>ul>li:nth-child(7) {
+            grid-column: 7/span 3; 
+            grid-row: 2;
+            border-radius: 10px 10px 0 10px;
+            
+        }
+    
+        #handen_i_fickan>ul {
+            padding-left: 0px;
+        }
+    
+        #handen_i_fickan>ul>li:nth-child(1) {
+                grid-column: 1/span 6;
+                grid-row: 1;
+                border-radius: 20px 20px 20px 0;
+                
+            }
+    
+        #handen_i_fickan>ul>li:nth-child(2) {
+            grid-column: 7/span 3; 
+            grid-row: 1;
+            border-radius: 0 20px 20px 20px;
+        }
+    
+        #handen_i_fickan>ul>li:nth-child(5) {
+            background-image: url(./img/hakan.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            grid-column: 1/span 6;
+            grid-row: 2;
+            border-radius: 0px 20px 20px 20px;
+            align-items: flex-end;
+            padding-bottom: 5px;
+        }
+        
+        #handen_i_fickan>ul>li:nth-child(6) {
+            grid-column: 7/span 3; 
+            grid-row: 2;
+            border-radius: 20px 20px 0 20px;
+            
+        }
+    
+        .top_right_90,
+        .two_wide,
+        .image_1,
+        .bottom_right_90,
+        .top_left_90 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 2vw;
+        }
+    
+        .empty {
+            display: none;
+        }
+    
+        /*ett ikonen*/
+        #handen_i_fickan .album_data {
+            position: relative;
+        }
+    
+        #handen_i_fickan .album_data::before {
+        content: '';
+        background-image: url(./img/number-1-icon.png);
+        background-size: 6vh 6vh;
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: absolute;
+        top: -10px;
+        left: -20px;
+        height: 100px;
+        width: 100px;
+        }
+
+
+
+
+
+
+
     }
 
 
@@ -589,7 +873,7 @@ padding: 10px;
 font-size: 25px;
 color: black;
 background-color: rgba(255, 255, 255, 0.8);
-border: 2px solid white;
+border: 1.5px solid rgba(255, 255, 255, 0.9);
 border-radius: 6px;
 
 } 
@@ -599,12 +883,6 @@ border-radius: 6px;
     box-shadow: 1px 1px 5px 5px white;
 }
 
-body>div {
-    margin: 50px;
-    margin-top: 100px;
-    background-color: rgba(143, 142, 142, 0.4);
-    border-radius: 20px;
-}
 
 article {
     background-color: rgba(76, 73, 73, 0.6);
