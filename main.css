@@ -26,20 +26,20 @@
 
     header {
         font-family: 'Bungee Shade';
-        font-size: 2vw;
         color: rgba(255, 255, 255, 0.809);
         padding: 2vw 2vw 0 2vw;
     
     }
     
     header>h1 {
-        margin-top: 0;
+        margin-top: -55px;
+        font-size: 6vw;
     }
     
     .album_data>div>h1 {
         font-family: 'Bungee Outline';
         font-size: 5vh;
-        margin-bottom: 0;
+        margin-bottom: -15px;
         margin-top: -15px;
     }
     
@@ -61,7 +61,6 @@
     }
     
     .album_description {
-        font-size: 1,5vw;
         padding-top: 5px;
         max-width: 90%;
     }
@@ -259,13 +258,31 @@
         display: none;
     }
 
+    /*ett ikonen*/
+    #handen_i_fickan .album_data {
+        position: relative;
+    }
+
+    #handen_i_fickan .album_data::before {
+    content: '';
+    background-image: url(./img/number-1-icon.png);
+    background-size: 7vh 7vh;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    height: 100px;
+    width: 100px;
+    }
+
 }
 
 
 /*tablet*/
 @media (max-width: 799px) {
     body {
-    background-image: url("./img/veronica-tablet.jpg");
+    background-image: url(./img/veronica-tablet.jpg);
     background-attachment: fixed;
     background-size: cover;
     margin: 0px;
@@ -286,19 +303,29 @@
     }
 
     .album_data {
-        padding-left: 20px;
+        grid-column: 1 / span 10;
+        grid-row: 2;
     }
     
     .album_data>div>h1 {
         font-family: 'Bungee Outline';
-        font-size: 6vh;
-        margin-bottom: 0;
+        font-size: 5vw;
+        margin-top: -5px;
+        margin-bottom: -5px;
+        line-height: 1.5em
     }
     
     .album_data>div>h2 {
-        font-size: 4vh;
+        font-size: 4vw;
         margin-top: 0;
         color: white;
+    }
+
+    .album_data>div>p {
+        font-size: 2.5vw;
+        margin-top: 40px;
+        margin-bottom: -15px;
+
     }
     
     .album_data>div:nth-child(2) ul {
@@ -310,24 +337,30 @@
         padding-top: 10px;
         max-width: 90%;
     }
+
+    .best {
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: 3;
+        padding: 10px;
+    }
     
     .cover {
         position: relative;
         margin: 10px;
-        grid-column: 2;
+        grid-column: 1 / span 6;
     }
     
     .show_hover {
         height: 100%;
         width: 100%;
         position: absolute;
-        border-radius: 20px 20px 0 0;
+        border-radius: 20px 0 0 20px;
     }
     
     .show_not_hover {
         height: 100%;
         width: 100%;
-        border-radius: 20px 20px 0 0;
+        border-radius: 20px 0 0 20px;
     }
     
     .show_hover:hover {
@@ -338,18 +371,14 @@
         list-style: decimal;
         padding-left: 3vw;
     }
-    .song_list ul {
-        list-style: decimal;
-        padding-left: 3vw;
-    }
     
     .song_list {
         gap: 5px;
-        grid-column: 2/span 3;
+        flex-direction: column;
+        grid-column: 7 / span 4;
         height: 100%;
-        font-size: 1vw;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        margin-left: 1.69vw;
+        font-size: 2vw;
         color: white;
         display: inline-grid;
     
@@ -361,26 +390,22 @@
         padding-bottom: 20px; 
     }
 
-
     #satan_i_gatan>div:nth-child(3)>div {
         background-color: rgb(238, 233, 216);
         color: rgb(155, 176, 147);
         padding-bottom: 20px; 
     }
 
-    .song_list>div {
-        border-radius: 0 0 0 20px;
-        padding-bottom: 20px;
-    }
-    
     .song_list>div:nth-child(1) {
-        margin-left: 1vw;
-        border-radius: 0 0 0 20px;
+        margin-right: 1vw;
+        border-radius: 0 20px 20px 0;
+        margin-top: 1.5vw;
     }
     
     .song_list>div:nth-child(2) {
-        margin-right: 10px;
-        border-radius: 0 0 20px 0;
+        margin-right: 1vw;
+        border-radius: 0 20px 20px 0;
+        margin-bottom: 1.5vw;
     }
     
     .song_list>div>h2 {
@@ -388,14 +413,17 @@
     }
     
     .anecdotes {
-        grid-column: 1/span 6;
+        grid-column: 1/span 10;
+        grid-row: 3;
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 1fr;
-        height: 30vh;
-        gap: 20px;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: 1fr 1fr;
+        height: 45vw;
+        gap: 5px;
         padding: 20px;
-        font-size: 1vw;
+        font-size: 2vw;
+        padding-bottom: 0;
+        margin-right: -75px;
     }
     
     #satan_i_gatan>ul {
@@ -403,64 +431,63 @@
     }
 
     #satan_i_gatan>ul>li:nth-child(1) {
-        grid-column: 1;
+        grid-column: 1/span 2;
         grid-row: 1;
-        border-radius: 20px 20px 20px 0;
+        border-radius: 10px 0 10px 10px;
         
     }
 
     #satan_i_gatan>ul>li:nth-child(2) {
-        grid-column: 2;
+        grid-column: 3/span 4;
         grid-row: 1;   
     }
 
     #satan_i_gatan>ul>li:nth-child(3) {
-        grid-column: 3/span 2; 
+        grid-column: 5/span 5;
         grid-row: 1;
-        border-radius: 20px 20px 0 20px;
+        border-radius: 10px 10px 10px 0;
     }
 
     #satan_i_gatan>ul>li:nth-child(6) {
         background-image: url(./img/walz.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        grid-column: 5;
-        grid-row: 1;
-        border-radius: 0px 20px 20px 20px;
+        grid-column: 3/span 2;
+        grid-row: 2;
+        border-radius: 0px 10px 10px 10px;
         align-items: flex-end;
         padding-bottom: 5px;
     }
 
     #satan_i_gatan>ul>li:nth-child(7) {
-        grid-column: 6; 
-        grid-row: 1;
-        border-radius: 20px 20px 0 20px;
+        grid-column: 5/span 2; 
+        grid-row: 2;
+        border-radius: 10px 10px 0 10px;
         
     }
-
 
     #handen_i_fickan>ul {
         padding-left: 0px;
     }
 
     #handen_i_fickan>ul>li:nth-child(1) {
-            grid-column: 1/span 2;
+            grid-column: 1/span 5;
             grid-row: 1;
             border-radius: 20px 20px 20px 0;
             
         }
 
     #handen_i_fickan>ul>li:nth-child(2) {
-        grid-column: 3; 
+        grid-column: 6/span 2; 
         grid-row: 1;
-        border-radius: 20px 20px 0 20px;
+        border-radius: 0 20px 20px 20px;
     }
 
     #handen_i_fickan>ul>li:nth-child(5) {
         background-image: url(./img/hakan.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        grid-column: 2/span 2;
+        grid-column: 3/span 5;
         grid-row: 2;
         border-radius: 0px 20px 20px 20px;
         align-items: flex-end;
@@ -468,13 +495,11 @@
     }
     
     #handen_i_fickan>ul>li:nth-child(6) {
-        grid-column: 4; 
+        grid-column: 8/span 2; 
         grid-row: 2;
         border-radius: 20px 20px 0 20px;
         
     }
-
-
 
     .top_right_90,
     .two_wide,
@@ -486,32 +511,28 @@
         align-items: center;
         padding: 0 2vw;
     }
-    
-    .top_right_90 {
-        grid-column: 1;
-        grid-row: 1;
-        border-radius: 20px 0 20px 20px;
-    
-    }
-    
-    .two_wide {
-        grid-column: 3/span 2;
-        grid-row: 1;
-        border-radius: 20px 20px 20px 0;
-    }
-
-    #satan_i_gatan>ul>li:nth-child(6) {
-        background-image: url(./img/walz.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        align-items: flex-end;
-        padding-bottom: 5px;
-    }
 
     .empty {
         display: none;
     }
 
+    /*ett ikonen*/
+    #handen_i_fickan .album_data {
+        position: relative;
+    }
+
+    #handen_i_fickan .album_data::before {
+    content: '';
+    background-image: url(./img/number-1-icon.png);
+    background-size: 6vh 6vh;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    height: 100px;
+    width: 100px;
+    }
 }
 
 
@@ -605,25 +626,6 @@ article {
     background-color: rgb(69, 71, 130);
     color: rgb(227, 210, 208);  
 }
-
-/*ett ikonen*/
-#handen_i_fickan .album_data {
-    position: relative;
-}
-
-#handen_i_fickan .album_data::before {
-content: '';
-background-image: url(./img/number-1-icon.png);
-background-size: 7vh 7vh;
-background-repeat: no-repeat;
-display: inline-block;
-position: absolute;
-top: -25px;
-left: -25px;
-height: 100px;
-width: 100px;
-}
-
 
 footer {
     padding-left: 30px;
